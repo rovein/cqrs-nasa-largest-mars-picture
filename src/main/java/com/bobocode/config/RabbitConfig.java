@@ -16,6 +16,7 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitConfig {
     @Bean
     public Exchange largestPictureCommandExchange() {
+
         return new DirectExchange("largest-picture-command-exchange", true, false);
     }
 
